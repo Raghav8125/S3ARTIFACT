@@ -7,11 +7,11 @@ Prerequisites
    Steps to set up
    ---------------
   1. Create a S3 bucket to store artifacts
-       S3 --> Create bucket
+         S3 --> Create bucket
          Bucket name: s3-artifact 
          Region: ap-southeast1
   2.  Create new IAM role with "S3 full access" and assign it to jenkins server
-       IAM --> Create role --> EC2
+           IAM --> Create role --> EC2
 
                 Permission: AmazonS3FullAccess 
                 Tags: key - Name, Value - S3FullAccess Role 
