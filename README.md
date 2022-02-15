@@ -11,15 +11,18 @@ Prerequisites
          Bucket name: s3-artifact 
          Region: ap-southeast1
   2.  Create new IAM role with "S3 full access" and assign it to jenkins server
-           IAM --> Create role --> EC2
+           
+       IAM --> Create role --> EC2
 
                 Permission: AmazonS3FullAccess 
                 Tags: key - Name, Value - S3FullAccess Role 
                 name: S3_Full_Access
 3)  Install "S3 Publisher" plugin on Jenkins   (assign iam role to jenkins in ec2 instance)
+    
     Manage Jenkins --> Manage Plugins --> Availabe --> S3 publisher
 
 4)  Configure S3 profile on Jenkins
+    
     Manage Jenkins --> Configure Systems --> Amazon S3 profiles
 
           Profile name : s3-artifact-repository 
